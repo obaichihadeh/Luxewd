@@ -2,7 +2,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Cairo", sans-serif;
   color: #444444;
   padding: 0;
   margin: 0;
@@ -24,7 +24,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -110,7 +110,7 @@ h6 {
 --------------------------------------------------------------*/
 #topbar {
   background: #191919;
-  font-size: 15px;
+  font-size: 14px;
   height: 40px;
   padding: 0;
   color: rgba(255, 255, 255, 0.6);
@@ -448,7 +448,7 @@ h6 {
 }
 
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family: "Cairo", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 14px;
@@ -757,7 +757,7 @@ section {
 }
 
 .cta .cta-btn {
-  font-family: "Raleway", sans-serif;
+  font-family: "Cairo", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 14px;
@@ -797,7 +797,7 @@ section {
   color: #444444;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
-  font-family: "Poppins", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 .portfolio #portfolio-flters li:hover,
@@ -983,7 +983,7 @@ section {
   font-size: 42px;
   color: #ffc51c;
   font-weight: 500;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Cairo", sans-serif;
   margin-bottom: 20px;
 }
 
@@ -1036,13 +1036,13 @@ section {
   transition: none;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Raleway", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-weight: 600;
   transition: 0.3s;
 }
 
 .pricing .box .btn-buy:hover {
-  background: #e82d2d;
+  background: #f6bf19;
 }
 
 .pricing .featured {
@@ -1076,6 +1076,50 @@ section {
   background: #fff;
   color: #ffc51c;
 }
+
+.box img.product-image {
+  width: 350px; /* Make image take full width of the box */
+  height: 250px;
+  border-radius: 8px; /* Optional: rounds the corners of the image */
+  margin-bottom: 15px; /* Adds space between the image and the text below it */
+}
+
+.box .btn-wrap {
+  display: flex;
+  justify-content: space-between; /* Separates the buttons */
+  align-items: center;
+}
+
+.box .btn-buy, .box .btn-more {
+  padding: 10px 20px; /* Adds padding inside the buttons */
+  text-decoration: none; /* Removes underline from links */
+  color: white; /* Sets text color to white */
+  background-color: #007BFF; /* Example: blue background */
+  border-radius: 5px; /* Rounds the corners of the button */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a subtle shadow */
+}
+
+.box .btn-more {
+  background-color: #28a745; /* Example: green background for 'Learn More' */
+}
+
+
+@media (max-width: 768px) {
+  .box {
+    flex-direction: column; /* Stack elements vertically on small screens */
+  }
+  
+  .btn-wrap {
+    flex-direction: column;
+    align-items: stretch; /* Make buttons stretch to full width */
+  }
+
+  .box .btn-buy, .box .btn-more {
+    width: 100%; /* Full width buttons on smaller screens */
+    margin-bottom: 10px; /* Adds space between stacked buttons */
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Team
@@ -1218,11 +1262,6 @@ section {
   font-size: 14px;
 }
 
-.contact .php-email-form input::focus,
-.contact .php-email-form textarea::focus {
-  background-color: #ffc51c;
-}
-
 .contact .php-email-form input {
   padding: 10px 15px;
 }
@@ -1230,6 +1269,15 @@ section {
 .contact .php-email-form textarea {
   padding: 12px 15px;
 }
+
+.contact .php-email-form textarea:focus {
+  border-color: #ffc51c;
+}
+
+.contact .php-email-form input:focus {
+  border-color: #ffc51c;
+}
+
 
 .contact .php-email-form button[type=submit] {
   background: #ffc51c;
@@ -1321,7 +1369,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 #footer .footer-top .social-links a {
@@ -1481,7 +1529,7 @@ section {
   position: absolute;
   top: 0;
   left: 4px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-weight: bold;
   color: #075e54;
   transform: rotateZ(20deg) translateX(10px);
