@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Luxewd Joinery - Product</title>
+    <title>Luxewd Joinery - Get Proposal</title>
     <meta content="We are team of talented designers making luxury wood designs as a part of BestHomePlus company."
         name="description">
     <meta content="Kitchen, Restaurant, Classic, Walk-In, Farmhouse, Modern, Vanity" name="keywords">
@@ -70,8 +70,8 @@
                     <!-- <li><a class="nav-link scrollto active" href="#">Shop</a></li> -->
                     <li class="dropdown active"><a href="#">Shop</a>
                         <ul>
-                            <li><a class="nav-link scrollto" href="#">Pricing By Unit</a></li>
-                            <li><a class="nav-link scrollto" href="CustomModel.html">Custom Model</a></li>
+                            <li><a class="nav-link scrollto" href="Product.html">Pricing By Unit</a></li>
+                            <li><a class="nav-link scrollto" href="#">Custom Model</a></li>
                             <li><a class="nav-link scrollto" href="Proposal.html">Get Proposal</a></li>
                         </ul>
                     </li>
@@ -81,7 +81,7 @@
                         <ul>
                             <li><a href="#"><iconify-icon
                                         icon="emojione-v1:flag-for-united-states"></iconify-icon>English</a></li>
-                            <li><a href="Product-Ar.html"><iconify-icon
+                            <li><a href="Proposal-Ar.html"><iconify-icon
                                         icon="emojione-v1:flag-for-syria"></iconify-icon>العربية</a></li>
                         </ul>
                     </li>
@@ -103,146 +103,66 @@
                     <li><a href="index.html">Home</a></li>
                     <li>Product</li>
                 </ol>
-                <h2>Pricing By Unit</h2>
+                <h2>Custom Model</h2>
 
             </div>
         </section><!-- End Breadcrumbs -->
 
-        <!-- ======= Product Section =======  -->
-        <section id="product" class="pricing">
-            <div class="container">
+        <!-- Custom Model Section -->
+        <section id="custom-model" class="contact section" style="padding: 25px;">
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <span>Custom Model</span>
+                <h2>Custom Model</h2>
+                <p>Please use the form below to select a model type and style, then enter specifications. This will
+                    enable us to calculate and provide you with specific results tailored to your choices.</p>
+            </div><!-- End Section Title -->
 
-                <!-- <div class="section-title">
-        <span>Product</span>
-        <h2>Product</h2>
-      </div> -->
-
-                <div class="row">
-
-                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="150">
-                        <div class="box">
-                            <h3>Classic Kitchen</h3>
-                            <h4><sup>$</sup>100</h4>
-                            <!-- <ul>
-              <li>Aida dere</li>
-              <li>Nec feugiat nisl</li>
-              <li>Nulla at volutpat dola</li>
-              <li class="na">Pharetra massa</li>
-              <li class="na">Massa ultricies mi</li>
-            </ul> -->
-                            <img src="assets/img/portfolio/Classic-Kitchen.jpg" alt="Product Image"
-                                class="product-image">
-
-                            <div class="btn-wrap">
-                                <a href="#" class="btn-buy">Learn More</a>
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row gy-4 mt-1">
+                    <div class="col-lg-12">
+                        <form id="modelForm" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
+                            <div class="row gy-4">
+                                <div class="col-md-3">
+                                    <select id="typeSelect" class="form-control"
+                                        onchange="updateBackgroundAndCalculate()">
+                                        <option value="">Select Type</option>
+                                        <option value="kitchen">Kitchen</option>
+                                        <option value="walk-in-closet">Walk-in Closet</option>
+                                        <option value="vanity">Vanity</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <select id="styleSelect" class="form-control"
+                                        onchange="updateBackgroundAndCalculate()">
+                                        <option value="">Select Style</option>
+                                        <option value="modern">Modern</option>
+                                        <option value="classic">Classic</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <input type="number" id="height" class="form-control" placeholder="Height (cm)"
+                                        required="">
+                                </div>
+                                <div class="col-md-3">
+                                    <input type="number" id="weight" class="form-control" placeholder="Weight (kg)"
+                                        required="">
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <button type="button" class="btn-buy"
+                                        onclick="updateBackgroundAndCalculate()">Calculate</button>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <div id="result"></div>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
-
-                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="box">
-                            <h3>Farmhouse Kitchen</h3>
-                            <h4><sup>$</sup>150</h4>
-                            <!-- <ul>
-              <li>Aida dere</li>
-              <li>Nec feugiat nisl</li>
-              <li>Nulla at volutpat dola</li>
-              <li class="na">Pharetra massa</li>
-              <li class="na">Massa ultricies mi</li>
-            </ul> -->
-                            <img src="assets/img/portfolio/Farmhouse-Kitchen.jpg" alt="Product Image"
-                                class="product-image">
-
-                            <div class="btn-wrap">
-                                <a href="#" class="btn-buy">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="250">
-                        <div class="box">
-                            <h3>Modern Kitchen</h3>
-                            <h4><sup>$</sup>200</h4>
-                            <!-- <ul>
-              <li>Aida dere</li>
-              <li>Nec feugiat nisl</li>
-              <li>Nulla at volutpat dola</li>
-              <li class="na">Pharetra massa</li>
-              <li class="na">Massa ultricies mi</li>
-            </ul> -->
-                            <img src="assets/img/portfolio/Modern-Kitchen.jpg" alt="Product Image"
-                                class="product-image">
-
-                            <div class="btn-wrap">
-                                <a href="#" class="btn-buy">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
-                        <div class="box">
-                            <h3>Modern Walk-in</h3>
-                            <h4><sup>$</sup>250</h4>
-                            <!-- <ul>
-              <li>Aida dere</li>
-              <li>Nec feugiat nisl</li>
-              <li>Nulla at volutpat dola</li>
-              <li class="na">Pharetra massa</li>
-              <li class="na">Massa ultricies mi</li>
-            </ul> -->
-                            <img src="assets/img/portfolio/Modern Walk-in.jpg" alt="Product Image"
-                                class="product-image">
-
-                            <div class="btn-wrap">
-                                <a href="#" class="btn-buy">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mt-4" data-aos="zoom-in" data-aos-delay="350">
-                        <div class="box">
-                            <h3>Classic Walk-in</h3>
-                            <h4><sup>$</sup>300</h4>
-                            <!-- <ul>
-              <li>Aida dere</li>
-              <li>Nec feugiat nisl</li>
-              <li>Nulla at volutpat dola</li>
-              <li class="na">Pharetra massa</li>
-              <li class="na">Massa ultricies mi</li>
-            </ul> -->
-                            <img src="assets/img/portfolio/Classic Walk-in.jpg" alt="Product Image"
-                                class="product-image">
-
-                            <div class="btn-wrap">
-                                <a href="#" class="btn-buy">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
-                        <div class="box">
-                            <h3>Vanity</h3>
-                            <h4><sup>$</sup>350</h4>
-                            <!-- <ul>
-              <li>Aida dere</li>
-              <li>Nec feugiat nisl</li>
-              <li>Nulla at volutpat dola</li>
-              <li class="na">Pharetra massa</li>
-              <li class="na">Massa ultricies mi</li>
-            </ul> -->
-                            <img src="assets/img/portfolio/Vanity.jpg" alt="Product Image" class="product-image">
-
-                            <div class="btn-wrap">
-                                <a href="#" class="btn-buy">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-
             </div>
-        </section>
-        <!-- End Product Section -->
+        </section><!-- Custom Model Section -->
+
+
 
     </main><!-- End #main -->
 
@@ -324,6 +244,66 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
+    <script>
+        function updateBackgroundAndCalculate() {
+            var type = document.getElementById("typeSelect").value;
+            var style = document.getElementById("styleSelect").value;
+            var height = document.getElementById("height").value;
+            var weight = document.getElementById("weight").value;
+            var result = document.getElementById("result");
+            var sectionTitle = document.querySelector('.section-title');
+
+            if (!type || !style) {
+                result.innerHTML = "Please select both type and style.";
+                document.body.style.backgroundImage = ""; // Reset to default
+                sectionTitle.style.color = ""; // Reset text color
+                result.style.color = ""; // Reset text color
+                return;
+            }
+
+            // Set text colors to white when a model is selected
+            sectionTitle.style.color = "white";
+            result.style.color = "white";
+
+            // Determine the image and calculation based on selected type and style
+            var modelKey = type + '-' + style;
+            var backgroundImageUrl;
+            var output;
+
+            switch (modelKey) {
+                case 'kitchen-modern':
+                    backgroundImageUrl = "assets/img/portfolio/Modern-Kitchen.jpg";
+                    output = "Calculation for Modern Kitchen with Height " + height + " cm and Weight " + weight + " kg.";
+                    break;
+                case 'kitchen-classic':
+                    backgroundImageUrl = "assets/img/portfolio/Classic-Kitchen.jpg";
+                    output = "Calculation for Classic Kitchen with Height " + height + " cm and Weight " + weight + " kg.";
+                    break;
+                case 'walk-in-closet-modern':
+                    backgroundImageUrl = "assets/img/portfolio/Modern Walk-in.jpg";
+                    output = "Calculation for Modern Walk-in Closet with Height " + height + " cm and Weight " + weight + " kg.";
+                    break;
+                case 'walk-in-closet-classic':
+                    backgroundImageUrl = "assets/img/portfolio/Classic Walk-in.jpg";
+                    output = "Calculation for Classic Walk-in Closet with Height " + height + " cm and Weight " + weight + " kg.";
+                    break;
+                case 'vanity-modern':
+                    backgroundImageUrl = "assets/img/portfolio/Vanity.jpg";
+                    output = "Calculation for Modern Vanity with Height " + height + " cm and Weight " + weight + " kg.";
+                    break;
+                case 'vanity-classic':
+                    backgroundImageUrl = "assets/img/portfolio/Vanity.jpg";
+                    output = "Calculation for Classic Vanity with Height " + height + " cm and Weight " + weight + " kg.";
+                    break;
+                default:
+                    backgroundImageUrl = "";
+                    output = "Unexpected model type and style.";
+            }
+
+            document.body.style.backgroundImage = "url('" + backgroundImageUrl + "')";
+            result.innerHTML = output;
+        }
+    </script>
 </body>
 
 </html>
